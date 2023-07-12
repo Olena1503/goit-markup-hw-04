@@ -5,6 +5,7 @@
   --white: #ffffff;
   --slate: #434455;
   --cloud: #f4f4fd;
+  --ligh-slate: #8e8f99;
 }
 p,
 h1,
@@ -96,7 +97,7 @@ body {
   display: block;
   padding-top: 24px;
   padding-bottom: 24px;
-  transition: color 300ms ease;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-menu-link:hover,
 .header-menu-link:focus {
@@ -128,7 +129,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  transition: color 300ms ease;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-adrress-link:hover,
 .header-adrress-link:focus {
@@ -138,6 +139,7 @@ body {
 /**----HERO----------------------------------------------*/
 
 .hero {
+  max-width: 1440рх;
   background-color: var(--navyblue);
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
@@ -219,6 +221,7 @@ body {
 /**----DOING----------------------------------------------*/
 
 .doing {
+  background-color: var(--white);
   padding-top: 0;
   padding-bottom: 120px;
 }
@@ -295,9 +298,69 @@ body {
   letter-spacing: 0.02em;
   color: var(--slate);
   text-align: center;
+  margin-bottom: 8px;
+}
+.team-contant-list {
+  display: flex;
+  gap: 24px;
+}
+.team-contant-item {
+  width: 40px;
+  height: 40px;
+}
+.team-contact-link {
+  width: 100%;
+  height: 100%;
+  background-color: var(--iris);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.team-contact-link:hover,
+.team-contact-link:focus {
+  background: var(--ocean);
 }
 .team-contant-icon {
   fill: var(--cloud);
+}
+/**---------CUSTOMERS---------------------------------------*/
+.customers {
+  background-color: var(--white);
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.customers-title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--navyblue);
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 72px;
+}
+.customers-list {
+  display: flex;
+  gap: 24px;
+}
+
+.customers-item {
+  width: 168px;
+  height: 88px;
+}
+.customers-icon {
+  fill: var(--ligh-slate);
+  width: 100%;
+  height: 100%;
+  background-color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  border: 1px solid var(--ligh-slatetslate, #8e8f99);
 }
 /**----FOOTER----------------------------------------------*/
 
@@ -305,6 +368,12 @@ body {
   background-color: var(--navyblue);
   padding-top: 100px;
   padding-bottom: 100px;
+}
+.contanier-footer {
+  display: flex;
+}
+.contanier-footer-logo {
+  margin-right: 120px;
 }
 .footer-logo {
   color: var(--iris);
@@ -327,7 +396,15 @@ body {
   color: var(--cloud);
   max-width: 264px;
 }
-
+.sotial-title {
+  color: var(--white);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  margin-bottom: 16px;
+}
 /**----PORTFOLIO-btn----------------------------------------------*/
 .main-portfolio {
   padding-top: 96px;
