@@ -323,7 +323,7 @@ body {
   height: 100%;
   background-color: var(--iris);
   display: flex;
-  gap: 16px;
+  /* gap: 24px;*/
   align-items: center;
   justify-content: center;
   border-radius: 50%;
@@ -529,12 +529,13 @@ body {
   position: relative;
   overflow: hidden;
 }
-.galary-item:hover .galary-text-cover {
+.galary-item:is(:hover, :focus) .galary-text-cover {
   transform: translateY(0%);
 }
-.galary-item:focus .galary-text-cover {
+/*.galary-item:focus .galary-text-cover {
   transform: translateY(0%);
-}
+}*/
+
 .galary-text-cover {
   position: absolute;
   top: 0;
