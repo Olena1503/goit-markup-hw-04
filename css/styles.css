@@ -311,8 +311,8 @@ body {
 }
 .team-contant-list {
   display: flex;
-  gap: 24px;
   justify-content: center;
+  gap: 24px;
 }
 .team-contant-item {
   width: 40px;
@@ -530,10 +530,10 @@ body {
   overflow: hidden;
 }
 .galary-item:hover .galary-text-cover {
-  transform: translateY(0);
+  transform: translateY(0%);
 }
 .galary-item:focus .galary-text-cover {
-  transform: translateY(0);
+  transform: translateY(0%);
 }
 .galary-text-cover {
   position: absolute;
